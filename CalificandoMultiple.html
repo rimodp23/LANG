@@ -88,7 +88,7 @@
         r.type = "text/javascript";	       
         s.type = "text/javascript";		
 		r.src = "js/Functions-general.js";
-	  
+
 		if(url.searchParams.get("Idioma")== 1)
 		{
 			if(url.searchParams.get("Ejercita") == 3)
@@ -98,6 +98,10 @@
 			if(url.searchParams.get("Ejercita") == 4)
 			{
 				s.src = "js/VariablesYFuncionesVerbosComunes264lIngles.js";
+			}
+			if(url.searchParams.get("Ejercita") == 5)
+			{
+				s.src = "js/VariablesYFuncionesPalabrasArgUruA2B2.js";
 			}
 		}
 		else
