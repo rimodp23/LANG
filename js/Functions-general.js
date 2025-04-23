@@ -131,9 +131,11 @@ function PracticarUnoNuevo()
 				if (i != rbtnSeleccionado)
 				{
 					elnumeroRandomRadioButton = Math.floor(Math.random()*(unasPalabrasRadioButtonDisponibles.length-1+1)+1) - 1;
-					unasPalabrasRadioButtonDisponibles.splice(elnumeroRandomRadioButton, 1); 
+					 
 		
 					$("#lrbtn" + i).text(unasPalabrasRadioButtonDisponibles[elnumeroRandomRadioButton].PalabraTraducida);
+					
+					unasPalabrasRadioButtonDisponibles.splice(elnumeroRandomRadioButton, 1);
 				}
 			}
 		}
@@ -167,9 +169,10 @@ function PracticarUnoNuevo()
 				if (i != rbtnSeleccionado)
 				{
 					elnumeroRandomRadioButton = Math.floor(Math.random()*(unasPalabrasRadioButtonDisponibles.length-1+1)+1) - 1;
-					unasPalabrasRadioButtonDisponibles.splice(elnumeroRandomRadioButton, 1); 
 		
 					$("#lrbtn" + i).text(unasPalabrasRadioButtonDisponibles[elnumeroRandomRadioButton].PalabraIngles);
+					
+					unasPalabrasRadioButtonDisponibles.splice(elnumeroRandomRadioButton, 1);
 				}
 			}
 		}	
@@ -206,9 +209,10 @@ function PracticarUnoNuevo()
 				if (i != rbtnSeleccionado)
 				{
 					elnumeroRandomRadioButton = Math.floor(Math.random()*(unasPalabrasRadioButtonDisponibles.length-1+1)+1) - 1;
-					unasPalabrasRadioButtonDisponibles.splice(elnumeroRandomRadioButton, 1); 
 		
 					$("#lrbtn" + i).text(unasPalabrasRadioButtonDisponibles[elnumeroRandomRadioButton].PalabraTraducida);
+					
+					unasPalabrasRadioButtonDisponibles.splice(elnumeroRandomRadioButton, 1); 
 				}
 			}
 		}
@@ -242,9 +246,10 @@ function PracticarUnoNuevo()
 				if (i != rbtnSeleccionado)
 				{
 					elnumeroRandomRadioButton = Math.floor(Math.random()*(unasPalabrasRadioButtonDisponibles.length-1+1)+1) - 1;
-					unasPalabrasRadioButtonDisponibles.splice(elnumeroRandomRadioButton, 1); 
 		
 					$("#lrbtn" + i).text(unasPalabrasRadioButtonDisponibles[elnumeroRandomRadioButton].PalabraNativa);
+					
+					unasPalabrasRadioButtonDisponibles.splice(elnumeroRandomRadioButton, 1); 
 				}
 			}
 		}	
