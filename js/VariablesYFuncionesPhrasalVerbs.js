@@ -1,0 +1,118 @@
+$(function () {
+	Load();
+});	
+
+function Load()
+{
+	SeteoVariablesGlobales();
+	document.getElementById("rbtn1").checked = 1;
+	PracticarUnoNuevo();
+}
+function SeteoVariablesGlobales()
+{
+	//document.getElementById("lblResultado").style.visibility = "hidden";
+	//$("#lblEstado").text("0/1");
+palabra = { PalabraIngles:"	Go on  	", PalabraNativa:"	Continuar  	", PalabraTraducida:"	Continuar  	"}; unasPalabras[	0	] = palabra;
+palabra = { PalabraIngles:"	Carry out  	", PalabraNativa:"	Llevar a cabo  	", PalabraTraducida:"	Llevar a cabo  	"}; unasPalabras[	1	] = palabra;
+palabra = { PalabraIngles:"	Set up  	", PalabraNativa:"	Preparar  	", PalabraTraducida:"	Preparar  	"}; unasPalabras[	2	] = palabra;
+palabra = { PalabraIngles:"	Pick up  	", PalabraNativa:"	Recoger  	", PalabraTraducida:"	Recoger  	"}; unasPalabras[	3	] = palabra;
+palabra = { PalabraIngles:"	Go back  	", PalabraNativa:"	Volver  	", PalabraTraducida:"	Volver  	"}; unasPalabras[	4	] = palabra;
+palabra = { PalabraIngles:"	Come back  	", PalabraNativa:"	Volver  	", PalabraTraducida:"	Volver  	"}; unasPalabras[	5	] = palabra;
+palabra = { PalabraIngles:"	Go out  	", PalabraNativa:"	Salir  	", PalabraTraducida:"	Salir  	"}; unasPalabras[	6	] = palabra;
+palabra = { PalabraIngles:"	Point out  	", PalabraNativa:"	Señalar  	", PalabraTraducida:"	Señalar  	"}; unasPalabras[	7	] = palabra;
+palabra = { PalabraIngles:"	Find out  	", PalabraNativa:"	Averiguar  	", PalabraTraducida:"	Averiguar  	"}; unasPalabras[	8	] = palabra;
+palabra = { PalabraIngles:"	Come up  	", PalabraNativa:"	Inventar  	", PalabraTraducida:"	Inventar  	"}; unasPalabras[	9	] = palabra;
+palabra = { PalabraIngles:"	Make up  	", PalabraNativa:"	Maquillar  	", PalabraTraducida:"	Maquillar  	"}; unasPalabras[	10	] = palabra;
+palabra = { PalabraIngles:"	Take over  	", PalabraNativa:"	Retomar  	", PalabraTraducida:"	Retomar  	"}; unasPalabras[	11	] = palabra;
+palabra = { PalabraIngles:"	Come out  	", PalabraNativa:"	Salir  	", PalabraTraducida:"	Salir  	"}; unasPalabras[	12	] = palabra;
+palabra = { PalabraIngles:"	Come in  	", PalabraNativa:"	Entrar  	", PalabraTraducida:"	Entrar  	"}; unasPalabras[	13	] = palabra;
+palabra = { PalabraIngles:"	Go down  	", PalabraNativa:"	Bajar  	", PalabraTraducida:"	Bajar  	"}; unasPalabras[	14	] = palabra;
+palabra = { PalabraIngles:"	Work out  	", PalabraNativa:"	Trabajar  	", PalabraTraducida:"	Trabajar  	"}; unasPalabras[	15	] = palabra;
+palabra = { PalabraIngles:"	Set out  	", PalabraNativa:"	Salir  	", PalabraTraducida:"	Salir  	"}; unasPalabras[	16	] = palabra;
+palabra = { PalabraIngles:"	Take up  	", PalabraNativa:"	Subir  	", PalabraTraducida:"	Subir  	"}; unasPalabras[	17	] = palabra;
+palabra = { PalabraIngles:"	Get back  	", PalabraNativa:"	Volver  	", PalabraTraducida:"	Volver  	"}; unasPalabras[	18	] = palabra;
+palabra = { PalabraIngles:"	Sit down  	", PalabraNativa:"	Sentarse  	", PalabraTraducida:"	Sentarse  	"}; unasPalabras[	19	] = palabra;
+palabra = { PalabraIngles:"	Turn out  	", PalabraNativa:"	Girar  	", PalabraTraducida:"	Girar  	"}; unasPalabras[	20	] = palabra;
+palabra = { PalabraIngles:"	Take on  	", PalabraNativa:"	Seguir  	", PalabraTraducida:"	Seguir  	"}; unasPalabras[	21	] = palabra;
+palabra = { PalabraIngles:"	Give up  	", PalabraNativa:"	Renunciar  	", PalabraTraducida:"	Renunciar  	"}; unasPalabras[	22	] = palabra;
+palabra = { PalabraIngles:"	Get up  	", PalabraNativa:"	Levantarse  	", PalabraTraducida:"	Levantarse  	"}; unasPalabras[	23	] = palabra;
+palabra = { PalabraIngles:"	Look up  	", PalabraNativa:"	Mirar hacia arriba  	", PalabraTraducida:"	Mirar hacia arriba  	"}; unasPalabras[	24	] = palabra;
+palabra = { PalabraIngles:"	Carry on  	", PalabraNativa:"	Continuar  	", PalabraTraducida:"	Continuar  	"}; unasPalabras[	25	] = palabra;
+palabra = { PalabraIngles:"	Go up  	", PalabraNativa:"	Subir  	", PalabraTraducida:"	Subir  	"}; unasPalabras[	26	] = palabra;
+palabra = { PalabraIngles:"	Get out  	", PalabraNativa:"	Salir  	", PalabraTraducida:"	Salir  	"}; unasPalabras[	27	] = palabra;
+palabra = { PalabraIngles:"	Take out  	", PalabraNativa:"	Sacar  	", PalabraTraducida:"	Sacar  	"}; unasPalabras[	28	] = palabra;
+palabra = { PalabraIngles:"	Come down  	", PalabraNativa:"	Bajar  	", PalabraTraducida:"	Bajar  	"}; unasPalabras[	29	] = palabra;
+palabra = { PalabraIngles:"	Put down  	", PalabraNativa:"	Bajar  	", PalabraTraducida:"	Bajar  	"}; unasPalabras[	30	] = palabra;
+palabra = { PalabraIngles:"	Put up  	", PalabraNativa:"	Subir  	", PalabraTraducida:"	Subir  	"}; unasPalabras[	31	] = palabra;
+palabra = { PalabraIngles:"	Turn up  	", PalabraNativa:"	Subir  	", PalabraTraducida:"	Subir  	"}; unasPalabras[	32	] = palabra;
+palabra = { PalabraIngles:"	Get on  	", PalabraNativa:"	Subir  	", PalabraTraducida:"	Subir  	"}; unasPalabras[	33	] = palabra;
+palabra = { PalabraIngles:"	Bring up  	", PalabraNativa:"	Subir  	", PalabraTraducida:"	Subir  	"}; unasPalabras[	34	] = palabra;
+palabra = { PalabraIngles:"	Bring in  	", PalabraNativa:"	Subir  	", PalabraTraducida:"	Subir  	"}; unasPalabras[	35	] = palabra;
+palabra = { PalabraIngles:"	Look back  	", PalabraNativa:"	Mirar atrás  	", PalabraTraducida:"	Mirar atrás  	"}; unasPalabras[	36	] = palabra;
+palabra = { PalabraIngles:"	Look down  	", PalabraNativa:"	Mirar hacia abajo  	", PalabraTraducida:"	Mirar hacia abajo  	"}; unasPalabras[	37	] = palabra;
+palabra = { PalabraIngles:"	Bring back  	", PalabraNativa:"	Retroceder  	", PalabraTraducida:"	Retroceder  	"}; unasPalabras[	38	] = palabra;
+palabra = { PalabraIngles:"	Break down  	", PalabraNativa:"	Derribar  	", PalabraTraducida:"	Derribar  	"}; unasPalabras[	39	] = palabra;
+palabra = { PalabraIngles:"	Take off  	", PalabraNativa:"	Despegar  	", PalabraTraducida:"	Despegar  	"}; unasPalabras[	40	] = palabra;
+palabra = { PalabraIngles:"	Go off  	", PalabraNativa:"	Despegar  	", PalabraTraducida:"	Despegar  	"}; unasPalabras[	41	] = palabra;
+palabra = { PalabraIngles:"	Bring about  	", PalabraNativa:"	Acercar  	", PalabraTraducida:"	Acercar  	"}; unasPalabras[	42	] = palabra;
+palabra = { PalabraIngles:"	Go in  	", PalabraNativa:"	Entrar  	", PalabraTraducida:"	Entrar  	"}; unasPalabras[	43	] = palabra;
+palabra = { PalabraIngles:"	Set off  	", PalabraNativa:"	Poner en marcha  	", PalabraTraducida:"	Poner en marcha  	"}; unasPalabras[	44	] = palabra;
+palabra = { PalabraIngles:"	Put out  	", PalabraNativa:"	Salir  	", PalabraTraducida:"	Salir  	"}; unasPalabras[	45	] = palabra;
+palabra = { PalabraIngles:"	Look out  	", PalabraNativa:"	Mirar hacia fuera  	", PalabraTraducida:"	Mirar hacia fuera  	"}; unasPalabras[	46	] = palabra;
+palabra = { PalabraIngles:"	Take back  	", PalabraNativa:"	Retomar  	", PalabraTraducida:"	Retomar  	"}; unasPalabras[	47	] = palabra;
+palabra = { PalabraIngles:"	Hold up  	", PalabraNativa:"	Levantar  	", PalabraTraducida:"	Levantar  	"}; unasPalabras[	48	] = palabra;
+palabra = { PalabraIngles:"	Get down  	", PalabraNativa:"	Bajar  	", PalabraTraducida:"	Bajar  	"}; unasPalabras[	49	] = palabra;
+palabra = { PalabraIngles:"	Hold out  	", PalabraNativa:"	Aguantar  	", PalabraTraducida:"	Aguantar  	"}; unasPalabras[	50	] = palabra;
+palabra = { PalabraIngles:"	Put on  	", PalabraNativa:"	Ponerse  	", PalabraTraducida:"	Ponerse  	"}; unasPalabras[	51	] = palabra;
+palabra = { PalabraIngles:"	Bring out  	", PalabraNativa:"	Sacar  	", PalabraTraducida:"	Sacar  	"}; unasPalabras[	52	] = palabra;
+palabra = { PalabraIngles:"	Move on  	", PalabraNativa:"	Seguir adelante  	", PalabraTraducida:"	Seguir adelante  	"}; unasPalabras[	53	] = palabra;
+palabra = { PalabraIngles:"	Turn back  	", PalabraNativa:"	Retroceder  	", PalabraTraducida:"	Retroceder  	"}; unasPalabras[	54	] = palabra;
+palabra = { PalabraIngles:"	Put back  	", PalabraNativa:"	Retroceder  	", PalabraTraducida:"	Retroceder  	"}; unasPalabras[	55	] = palabra;
+palabra = { PalabraIngles:"	Go round  	", PalabraNativa:"	Dar la vuelta  	", PalabraTraducida:"	Dar la vuelta  	"}; unasPalabras[	56	] = palabra;
+palabra = { PalabraIngles:"	Break up  	", PalabraNativa:"	Romper  	", PalabraTraducida:"	Romper  	"}; unasPalabras[	57	] = palabra;
+palabra = { PalabraIngles:"	Come along  	", PalabraNativa:"	Volver  	", PalabraTraducida:"	Volver  	"}; unasPalabras[	58	] = palabra;
+palabra = { PalabraIngles:"	Sit up  	", PalabraNativa:"	Sentarse  	", PalabraTraducida:"	Sentarse  	"}; unasPalabras[	59	] = palabra;
+palabra = { PalabraIngles:"	Turn round  	", PalabraNativa:"	Dar la vuelta  	", PalabraTraducida:"	Dar la vuelta  	"}; unasPalabras[	60	] = palabra;
+palabra = { PalabraIngles:"	Get in  	", PalabraNativa:"	Entra  	", PalabraTraducida:"	Entra  	"}; unasPalabras[	61	] = palabra;
+palabra = { PalabraIngles:"	Come round  	", PalabraNativa:"	Da la vuelta  	", PalabraTraducida:"	Da la vuelta  	"}; unasPalabras[	62	] = palabra;
+palabra = { PalabraIngles:"	Make out  	", PalabraNativa:"	Salir  	", PalabraTraducida:"	Salir  	"}; unasPalabras[	63	] = palabra;
+palabra = { PalabraIngles:"	Get off  	", PalabraNativa:"	Bajar  	", PalabraTraducida:"	Bajar  	"}; unasPalabras[	64	] = palabra;
+palabra = { PalabraIngles:"	Turn down  	", PalabraNativa:"	Bajar  	", PalabraTraducida:"	Bajar  	"}; unasPalabras[	65	] = palabra;
+palabra = { PalabraIngles:"	Bring down  	", PalabraNativa:"	Bajar  	", PalabraTraducida:"	Bajar  	"}; unasPalabras[	66	] = palabra;
+palabra = { PalabraIngles:"	Come over  	", PalabraNativa:"	Bajar  	", PalabraTraducida:"	Bajar  	"}; unasPalabras[	67	] = palabra;
+palabra = { PalabraIngles:"	Break out  	", PalabraNativa:"	Romper  	", PalabraTraducida:"	Romper  	"}; unasPalabras[	68	] = palabra;
+palabra = { PalabraIngles:"	Go over  	", PalabraNativa:"	Pasar  	", PalabraTraducida:"	Pasar  	"}; unasPalabras[	69	] = palabra;
+palabra = { PalabraIngles:"	Turn over  	", PalabraNativa:"	Dar la vuelta  	", PalabraTraducida:"	Dar la vuelta  	"}; unasPalabras[	70	] = palabra;
+palabra = { PalabraIngles:"	Go through  	", PalabraNativa:"	Atravesar  	", PalabraTraducida:"	Atravesar  	"}; unasPalabras[	71	] = palabra;
+palabra = { PalabraIngles:"	Hold on  	", PalabraNativa:"	Aguantar  	", PalabraTraducida:"	Aguantar  	"}; unasPalabras[	72	] = palabra;
+palabra = { PalabraIngles:"	Pick out  	", PalabraNativa:"	Recoger  	", PalabraTraducida:"	Recoger  	"}; unasPalabras[	73	] = palabra;
+palabra = { PalabraIngles:"	Sit back  	", PalabraNativa:"	Volver a sentarse  	", PalabraTraducida:"	Volver a sentarse  	"}; unasPalabras[	74	] = palabra;
+palabra = { PalabraIngles:"	Hold back  	", PalabraNativa:"	Retener  	", PalabraTraducida:"	Retener  	"}; unasPalabras[	75	] = palabra;
+palabra = { PalabraIngles:"	Put in  	", PalabraNativa:"	Meter  	", PalabraTraducida:"	Meter  	"}; unasPalabras[	76	] = palabra;
+palabra = { PalabraIngles:"	Move in  	", PalabraNativa:"	Entrar  	", PalabraTraducida:"	Entrar  	"}; unasPalabras[	77	] = palabra;
+palabra = { PalabraIngles:"	Look around  	", PalabraNativa:"	Mirar alrededor  	", PalabraTraducida:"	Mirar alrededor  	"}; unasPalabras[	78	] = palabra;
+palabra = { PalabraIngles:"	Take down  	", PalabraNativa:"	Bajar  	", PalabraTraducida:"	Bajar  	"}; unasPalabras[	79	] = palabra;
+palabra = { PalabraIngles:"	Put off  	", PalabraNativa:"	Bajar  	", PalabraTraducida:"	Bajar  	"}; unasPalabras[	80	] = palabra;
+palabra = { PalabraIngles:"	Come about  	", PalabraNativa:"	Venir  	", PalabraTraducida:"	Venir  	"}; unasPalabras[	81	] = palabra;
+palabra = { PalabraIngles:"	Go along  	", PalabraNativa:"	Seguir  	", PalabraTraducida:"	Seguir  	"}; unasPalabras[	82	] = palabra;
+palabra = { PalabraIngles:"	Look round  	", PalabraNativa:"	Mirar alrededor  	", PalabraTraducida:"	Mirar alrededor  	"}; unasPalabras[	83	] = palabra;
+palabra = { PalabraIngles:"	Set about  	", PalabraNativa:"	Poner en marcha  	", PalabraTraducida:"	Poner en marcha  	"}; unasPalabras[	84	] = palabra;
+palabra = { PalabraIngles:"	Turn off  	", PalabraNativa:"	Desviarse  	", PalabraTraducida:"	Desviarse  	"}; unasPalabras[	85	] = palabra;
+palabra = { PalabraIngles:"	Give in  	", PalabraNativa:"	Ceder  	", PalabraTraducida:"	Ceder  	"}; unasPalabras[	86	] = palabra;
+palabra = { PalabraIngles:"	Move out  	", PalabraNativa:"	Salir  	", PalabraTraducida:"	Salir  	"}; unasPalabras[	87	] = palabra;
+palabra = { PalabraIngles:"	Come through  	", PalabraNativa:"	Pasar  	", PalabraTraducida:"	Pasar  	"}; unasPalabras[	88	] = palabra;
+palabra = { PalabraIngles:"	Move back  	", PalabraNativa:"	Retroceder  	", PalabraTraducida:"	Retroceder  	"}; unasPalabras[	89	] = palabra;
+palabra = { PalabraIngles:"	Break off  	", PalabraNativa:"	Romper  	", PalabraTraducida:"	Romper  	"}; unasPalabras[	90	] = palabra;
+palabra = { PalabraIngles:"	Get through  	", PalabraNativa:"	Atravesar  	", PalabraTraducida:"	Atravesar  	"}; unasPalabras[	91	] = palabra;
+palabra = { PalabraIngles:"	Give out  	", PalabraNativa:"	Abandonar  	", PalabraTraducida:"	Abandonar  	"}; unasPalabras[	92	] = palabra;
+palabra = { PalabraIngles:"	Come off  	", PalabraNativa:"	Salir  	", PalabraTraducida:"	Salir  	"}; unasPalabras[	93	] = palabra;
+palabra = { PalabraIngles:"	Take in  	", PalabraNativa:"	Recoger  	", PalabraTraducida:"	Recoger  	"}; unasPalabras[	94	] = palabra;
+palabra = { PalabraIngles:"	Give back  	", PalabraNativa:"	Devolver  	", PalabraTraducida:"	Devolver  	"}; unasPalabras[	95	] = palabra;
+palabra = { PalabraIngles:"	Set down  	", PalabraNativa:"	Bajar  	", PalabraTraducida:"	Bajar  	"}; unasPalabras[	96	] = palabra;
+palabra = { PalabraIngles:"	Move up  	", PalabraNativa:"	Subir  	", PalabraTraducida:"	Subir  	"}; unasPalabras[	97	] = palabra;
+palabra = { PalabraIngles:"	Turn around  	", PalabraNativa:"	Dar la vuelta  	", PalabraTraducida:"	Dar la vuelta  	"}; unasPalabras[	98	] = palabra;
+palabra = { PalabraIngles:"	Get in  	", PalabraNativa:"	Entrar  	", PalabraTraducida:"	Entrar  	"}; unasPalabras[	99	] = palabra;
+
+			
+	cantidadPalabras = unasPalabras.length;
+}
