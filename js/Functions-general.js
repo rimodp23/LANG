@@ -77,7 +77,7 @@ function PracticarUnoNuevo()
 		
 		if(url.searchParams.get("RondasCant")== 0)
 		{
-			STOPTEMPORAL = unasPalabras.length - 7;
+			STOPTEMPORAL = unasPalabras.length - 4;
 		}
 		else
 		{
