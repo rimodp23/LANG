@@ -67,9 +67,9 @@ function PracticarUnoNuevo()
 		var url_string = window.location.href;
 		var url = new URL(url_string);		
 		var Ejercita = url.searchParams.get("Ejercita");
-		if(Ejercita != 1 && Ejercita != 2 && Ejercita != 6 && Ejercita != 7)
+		if(Ejercita == 1 || Ejercita == 2 || Ejercita == 6 || Ejercita == 7)
 		{
-			$('image').css('visibility', 'hidden');
+			$('#image').css('display', 'block');
 		}
 		
 		
