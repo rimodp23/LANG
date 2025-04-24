@@ -11,9 +11,9 @@
   <link rel="stylesheet" href="./css/my-app.css">
 </head>
 <body class="d-flex align-items-center justify-content-center" style="min-height: 100vh;">
-  <div class="text-center">
+  <div class="text-left">
 			<div class="row justify-content-center">
-					<img id="image" src="" class="" style="height: 7rem">
+					<img id="image" src="" class="" style="height: 7rem;display:none">
 			</div>
 			<div class="row justify-content-center">
 				<div class="col-12 text-center">
@@ -27,30 +27,36 @@
 					<span id="preguntasHechasCant" style="color: black;font-size: 1.8rem">0</span>
 				</div>
 			</div>
-
+			
+			<div class="row justify-content-center">
+				<div class="col-auto">
+					<span id="lblSeleccionado" class="display-4 font-weight-bold" style="font-size: 1.5rem;"></span>
+				</div>
+			</div>
+			
 			<div class="row justify-content-center">
 				<div class="col-auto">
 					<fieldset class="border p-2">
-						<legend class="w-auto">Opciones</legend>
+						<legend class="w-auto" style="font-size: 1rem;">Opciones</legend>
 						<div class="form-check">
-							<input id="rbtn1" class="form-check-input" style="margin: 12px" type="radio" name="options" onchange="radioChanged($(this))">
-							<label id="lrbtn1" class="form-check-label" style="margin-left:40px": 60px></label>
+							<input id="rbtn1" class="form-check-input" style="margin: 7px" type="radio" name="options" onchange="radioChanged($(this))">
+							<label for="rbtn1" id="lrbtn1"  style="margin-left:40px": 60px></label>
 						</div>
 						<div class="form-check">
-							<input id="rbtn2" class="form-check-input" style="margin: 12px" type="radio" name="options" onchange="radioChanged($(this))">
-							<label id="lrbtn2" class="form-check-label" style="margin-left:40px"></label>
+							<input id="rbtn2" class="form-check-input" style="margin: 7px" type="radio" name="options" onchange="radioChanged($(this))">
+							<label for="rbtn2" id="lrbtn2"  style="margin-left:40px"></label>
 						</div>
 						<div class="form-check">
-							<input id="rbtn3" class="form-check-input" style="margin: 12px" type="radio" name="options" onchange="radioChanged($(this))">
-							<label id="lrbtn3" class="form-check-label" style="margin-left:40px"></label>
+							<input id="rbtn3" class="form-check-input" style="margin: 7px" type="radio" name="options" onchange="radioChanged($(this))">
+							<label for="rbtn3" id="lrbtn3"  style="margin-left:40px"></label>
 						</div>
 						<div class="form-check">
-							<input id="rbtn4" class="form-check-input" style="margin: 12px" type="radio" name="options" onchange="radioChanged($(this))">
-							<label id="lrbtn4" class="form-check-label" style="margin-left:40px"></label>
+							<input id="rbtn4" class="form-check-input" style="margin: 7px" type="radio" name="options" onchange="radioChanged($(this))">
+							<label for="rbtn4" id="lrbtn4"  style="margin-left:40px"></label>
 						</div>
 						<div class="form-check">
-							<input id="rbtn5" class="form-check-input" style="margin: 12px" type="radio" name="options" onchange="radioChanged($(this))">
-							<label id="lrbtn5" class="form-check-label" style="margin-left:40px"></label>
+							<input id="rbtn5" class="form-check-input" style="margin: 7px" type="radio" name="options" onchange="radioChanged($(this))">
+							<label for="rbtn5" id="lrbtn5"  style="margin-left:40px"></label>
 						</div>
 					</fieldset>
 					<div class="row justify-content-center">
@@ -61,11 +67,7 @@
 				</div>
 
 			</div>
-			<div class="row justify-content-center">
-				<div class="col-auto">
-					<span id="lblSeleccionado" class="display-4 font-weight-bold" style="font-size: 1.5rem;"></span>
-				</div>
-			</div>
+
 
 
   </div>
